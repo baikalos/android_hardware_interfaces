@@ -48,8 +48,8 @@ static const PcmCapabilities kDefaultSoftwarePcmCapabilities = {
 };
 
 static const SbcCapabilities kDefaultOffloadSbcCapability = {
-    .sampleRateHz = {44100},
-    .channelMode = {SbcChannelMode::MONO, SbcChannelMode::JOINT_STEREO},
+    .sampleRateHz = {44100, 48000},
+    .channelMode = {SbcChannelMode::MONO, SbcChannelMode::JOINT_STEREO, SbcChannelMode::DUAL},
     .blockLength = {4, 8, 12, 16},
     .numSubbands = {8},
     .allocMethod = {SbcAllocMethod::ALLOC_MD_L},
