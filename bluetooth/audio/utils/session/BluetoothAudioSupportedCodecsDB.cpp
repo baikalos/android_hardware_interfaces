@@ -57,9 +57,10 @@ static const PcmParameters kDefaultSoftwarePcmCapabilities = {
 // SBC: mSampleRate:(44100), mBitsPerSample:(16), mChannelMode:(MONO|STEREO)
 //      all blocks | subbands 8 | Loudness
 static const SbcParameters kDefaultOffloadSbcCapability = {
-    .sampleRate = SampleRate::RATE_44100,
+    .sampleRate = static_cast<SampleRate>(SampleRate::RATE_44100 | SampleRate::RATE_48000),
     .channelMode = static_cast<SbcChannelMode>(SbcChannelMode::MONO |
-                                               SbcChannelMode::JOINT_STEREO),
+                                               SbcChannelMode::JOINT_STEREO |
+                                               SbcChannelMode::DUAL ),
     .blockLength = static_cast<SbcBlockLength>(
         SbcBlockLength::BLOCKS_4 | SbcBlockLength::BLOCKS_8 |
         SbcBlockLength::BLOCKS_12 | SbcBlockLength::BLOCKS_16),
@@ -67,7 +68,7 @@ static const SbcParameters kDefaultOffloadSbcCapability = {
     .allocMethod = SbcAllocMethod::ALLOC_MD_L,
     .bitsPerSample = BitsPerSample::BITS_16,
     .minBitpool = 2,
-    .maxBitpool = 53};
+    .maxBitpool = 80};
 
 // AAC: mSampleRate:(44100), mBitsPerSample:(16), mChannelMode:(STEREO)
 static const AacParameters kDefaultOffloadAacCapability = {
