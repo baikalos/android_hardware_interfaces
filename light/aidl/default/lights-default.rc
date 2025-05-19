@@ -3,3 +3,4 @@ service vendor.light-default /vendor/bin/hw/android.hardware.lights-service.exam
     user nobody
     group nobody
     shutdown critical
+    writepid /dev/cpuset/system-background/tasks

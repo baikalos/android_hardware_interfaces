@@ -1,3 +1,4 @@
 service canhalconfigurator /system/bin/canhalconfigurator
   class core
   oneshot
+  writepid /dev/cpuset/system-background/tasks

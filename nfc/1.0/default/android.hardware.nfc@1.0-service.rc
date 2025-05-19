@@ -3,3 +3,4 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.0-service
     class hal
     user nfc
     group nfc
+    writepid /dev/cpuset/system-background/tasks

@@ -2,3 +2,4 @@ service vendor.memtrack-default /vendor/bin/hw/android.hardware.memtrack-service
     class hal
     user nobody
     group system
+    writepid /dev/cpuset/system-background/tasks

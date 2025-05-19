@@ -2,3 +2,4 @@ service vendor.inputprocessor-default /vendor/bin/hw/android.hardware.input.proc
     class hal
     user nobody
     group nobody
+    writepid /dev/cpuset/system-background/tasks

@@ -4,3 +4,4 @@ service broadcastradio-hal2 /vendor/bin/hw/android.hardware.broadcastradio@2.0-s
     class hal
     user audioserver
     group audio
+    writepid /dev/cpuset/system-background/tasks

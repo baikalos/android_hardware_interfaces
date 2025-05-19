@@ -5,3 +5,4 @@ service vendor.health-storage-default /vendor/bin/hw/android.hardware.health.sto
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

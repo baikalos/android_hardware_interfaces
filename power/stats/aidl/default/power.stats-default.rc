@@ -2,3 +2,4 @@ service vendor.power.stats-default /vendor/bin/hw/android.hardware.power.stats-s
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

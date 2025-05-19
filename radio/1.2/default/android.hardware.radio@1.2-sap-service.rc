@@ -5,3 +5,4 @@ service vendor.sap-1-2 /vendor/bin/hw/android.hardware.radio@1.2-sap-service
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

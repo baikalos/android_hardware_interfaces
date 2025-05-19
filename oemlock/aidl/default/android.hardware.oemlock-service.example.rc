@@ -2,3 +2,4 @@ service vendor.oemlock_default /vendor/bin/hw/android.hardware.oemlock-service.e
     class hal
     user hsm
     group hsm
+    writepid /dev/cpuset/system-background/tasks

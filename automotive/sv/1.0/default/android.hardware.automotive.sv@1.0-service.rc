@@ -3,3 +3,4 @@ service sv_service /vendor/bin/hw/android.hardware.automotive.sv@1.0-service
     user automotive_evs
     group automotive_evs
     disabled
+    writepid /dev/cpuset/system-background/tasks

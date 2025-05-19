@@ -15,3 +15,4 @@ service vendor.atrace-hal-1-0 /vendor/bin/hw/android.hardware.atrace@1.0-service
     class early_hal
     user system
     group system readtracefs
+    writepid /dev/cpuset/system-background/tasks

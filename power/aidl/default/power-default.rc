@@ -2,3 +2,4 @@ service vendor.power-default /vendor/bin/hw/android.hardware.power-service.examp
     class hal
     user nobody
     group system
+    writepid /dev/cpuset/system-background/tasks

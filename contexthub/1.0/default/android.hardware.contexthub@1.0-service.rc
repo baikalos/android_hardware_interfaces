@@ -3,3 +3,4 @@ service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0
     class hal
     user context_hub
     group context_hub
+    writepid /dev/cpuset/system-background/tasks

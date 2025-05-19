@@ -5,3 +5,4 @@ service vendor.sensors-hal-2-1-mock /apex/com.android.hardware.sensors/bin/hw/an
     user system
     group system
     rlimit rtprio 10 10
+    writepid /dev/cpuset/system-background/tasks

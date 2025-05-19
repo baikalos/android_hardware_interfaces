@@ -2,3 +2,4 @@ service vendor.vibrator-default /apex/com.android.hardware.vibrator/bin/hw/andro
     class hal
     user nobody
     group nobody
+    writepid /dev/cpuset/system-background/tasks

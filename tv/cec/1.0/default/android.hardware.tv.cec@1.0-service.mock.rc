@@ -3,3 +3,4 @@ service vendor.cec-hal-1-0-mock /vendor/bin/hw/android.hardware.tv.cec@1.0-servi
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

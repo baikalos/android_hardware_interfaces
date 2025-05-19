@@ -4,3 +4,4 @@ service vendor.contexthub-hal-1-1-mock /vendor/bin/hw/android.hardware.contexthu
     class hal
     user context_hub
     group context_hub
+    writepid /dev/cpuset/system-background/tasks

@@ -5,3 +5,4 @@ service vendor.usb-gadget-hal-1-2 /vendor/bin/hw/android.hardware.usb.gadget@1.2
     class hal
     user system
     group system shell mtp
+    writepid /dev/cpuset/system-background/tasks

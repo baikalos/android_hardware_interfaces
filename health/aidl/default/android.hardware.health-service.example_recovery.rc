@@ -5,3 +5,4 @@ service vendor.health-default /system/bin/hw/android.hardware.health-service.exa
     group system
     capabilities WAKE_ALARM BLOCK_SUSPEND
     file /dev/kmsg w
+    writepid /dev/cpuset/system-background/tasks
